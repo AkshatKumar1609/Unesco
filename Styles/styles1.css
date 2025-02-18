@@ -244,17 +244,45 @@ body{
     .box-content h2{
         font-size: 16px;
     }
+    .box-content{
+        filter: none;
+    }
 }
 @media screen and (max-width:500px){
+    .box{
+        width: 100%;
+    }
     .box,.box-image{
-        height:150px;
+        height: 150px;
+    }
+    .box-content{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        filter: none;
     }
 }
 @media screen and (max-width:400px){
     .box{
-        width: 99%;
+        width: 100%;
     }
     .box,.box-image{
-        height:300px;
+        height: 200px;
     }
+    .box-content{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        filter: none;
+    }
+}
+
+.search-input {
+    margin-left: 0;
+}
+
+.navbar-search {
+    justify-content: flex-start;
+}
+
+.navbar-search button {
+    margin-left: 10px;
 }
